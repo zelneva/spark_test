@@ -14,15 +14,12 @@ object TestWork {
     val input1 = sc.textFile(file1)
     val header1 = input1.first()
     val filterData1 = input1.filter(x => x != header1)
-    val data1 = filterData1.map(line => line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)").map(elem => elem.trim))
-      .filter(str => str.length > 9 && !str.contains("") && str(1).matches("[^\"]*[a-zA-Z]*") && !str(1).matches("[a-zA-Z]*"))
-
+    val data1 = filterData(filterData1)
 
     val input2 = sc.textFile(file2)
     val header2 = input2.first()
     val filterData2 = input2.filter(x => x != header1)
-    val data2 = filterData2.map(line => line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)").map(elem => elem.trim))
-      .filter(str => str.length > 9 && !str.contains("") && str(1).matches("[^\"]*[a-zA-Z]*") && !str(1).matches("[a-zA-Z]*"))
+    val data2 = filterData(filterData2)
 
 
     // подсчет населения стран
@@ -40,6 +37,11 @@ object TestWork {
 
     val outputFile = "result.txt"
     unionPopilation.saveAsTextFile(outputFile)
+  }
+
+  def filterData(data: RDD[String]): RDD[Array[String]] ={
+    data.map(line => line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)").map(elem => elem.trim))
+      .filter(str => str.length > 9 && !str.contains("") && str(1).matches("[^\"]*[a-zA-Z]*") && !str(1).matches("[a-zA-Z]*"))
   }
 
 

@@ -18,8 +18,5 @@ object SimpleApp {
 
     val filterText = textData.map(line => line.split(" ")).filter(x => x.length > 1).map(x => (x(0), x(1).toInt)).groupByKey.mapValues(x => x.max)
     val data = numberData.map(line => line.split(" ")).filter(x => x.length > 1).map(x => (x(0), x(1).toInt)).groupByKey.mapValues(x => x.max)
-
-    data.union(filterText).distinct().foreach(println)
-
   }
 }
