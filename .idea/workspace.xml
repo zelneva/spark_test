@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b54b2c9-b567-4172-bc15-cbad8bde857e" name="Default Changelist" comment="" />
+    <list default="true" id="9b54b2c9-b567-4172-bc15-cbad8bde857e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/int.txt" beforeDir="false" afterPath="$PROJECT_DIR$/int.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/SimpleApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/SimpleApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/TestWork.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/TestWork.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleApp$$anonfun$main$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleApp$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp$SimpleCSVHeader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$2$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$2$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/untitled.sc" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/SimpleApp.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            <state relative-caret-position="200">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -30,13 +58,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/int.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TestWork.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="126">
+              <caret line="39" column="83" selection-start-line="39" selection-start-column="83" selection-end-line="39" selection-end-column="83" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,18 +91,34 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>&quot;9</find>
+      <find>Nauru</find>
+      <find>Equatorial Guinea</find>
+      <find>Comoros</find>
+      <find>Antigua and Barbuda</find>
+      <find>Russian</find>
+      <find>rus</find>
+      <find>Boliv</find>
+      <find>Latvia</find>
+      <find>Egypt</find>
+      <find>Ira</find>
+      <find>Germany</find>
+      <find>Iraq</find>
+      <find>I</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/text.txt" />
-        <option value="$PROJECT_DIR$/int.txt" />
-        <option value="$PROJECT_DIR$/src/main/scala/SimpleApp.scala" />
         <option value="$PROJECT_DIR$/text.txt" />
         <option value="$PROJECT_DIR$/src/main/scala/untitled.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/TestWork.scala" />
+        <option value="$PROJECT_DIR$/int.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/SimpleApp.scala" />
       </list>
     </option>
   </component>
@@ -92,12 +145,12 @@
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -105,6 +158,11 @@
             <path>
               <item name="SparkExampleTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="SparkExampleTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkExampleTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkExampleTest" type="462c0819:PsiDirectoryNode" />
+              <item name="result.txt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SparkExampleTest" type="b2602c69:ProjectViewProjectNode" />
@@ -128,9 +186,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="D:/adhoc_13413" />
   </component>
   <component name="RecentsManager">
@@ -153,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestWork">
+  <component name="RunManager" selected="Application.SimpleApp">
     <configuration name="SimpleApp" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="SimpleApp" />
       <module name="SparkExampleTest" />
@@ -198,8 +258,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestWork" />
         <item itemvalue="Application.SimpleApp" />
+        <item itemvalue="Application.TestWork" />
       </list>
     </recent_temporary>
   </component>
@@ -227,8 +287,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.19742814" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.20347957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -236,13 +297,13 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.502439" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.57610476" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.695581" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45171848" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.049099836" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
@@ -264,13 +325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/int.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -285,29 +339,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/SimpleApp.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/untitled.sc" />
+    <entry file="file://$PROJECT_DIR$/result.txt/._SUCCESS.crc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result.txt/part-00001">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1373" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/untitled.sc">
+    <entry file="file://$PROJECT_DIR$/result.txt/part-00000">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-        </state>
+        <state relative-caret-position="-1541" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/TestWork.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="126">
+          <caret line="39" column="83" selection-start-line="39" selection-start-column="83" selection-end-line="39" selection-end-column="83" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/int.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/SimpleApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
