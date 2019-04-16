@@ -5,12 +5,19 @@ import org.apache.spark.{SparkConf, SparkContext}
 object TestWork {
   def main(args: Array[String]) {
 
+    //todo add .gitignore
+
+    //todo create object Constants for constants
+    //create method getFilePath (exmaple - getFilePath("unsd-citypopulation-year-both.csv")
     val file1 = "C:\\Users\\Администратор\\Downloads\\Telegram Desktop\\unsd-citypopulation-year-both.csv"
     val file2 = "C:\\Users\\Администратор\\Downloads\\Telegram Desktop\\unsd-citypopulation-year-fm.csv"
 
+    //todo try to use SparkSession intead SparkConf and SparkContext
     val conf: SparkConf = new SparkConf().setAppName("SimpleApp").setMaster("local")
     val sc: SparkContext = new SparkContext(conf)
 
+    //todo val input1 = spark.read.format....
+    //todo to except the header use .option("header","true")
     val input1 = sc.textFile(file1)
     val header1 = input1.first()
     val filterData1 = input1.filter(x => x != header1)
@@ -39,6 +46,11 @@ object TestWork {
     unionPopilation.saveAsTextFile(outputFile)
   }
 
+  //todo add method loadData which split input strings and convert RDD[Array[String]] to RDD[someCaseClass]
+  //example :
+  //case class A(someField: String)
+  //val rdd = spark.sparkContext.parallelize(Array("a", "b", "c"))
+  //val rddA = rdd.map[A](str => A(str))
   def filterData(data: RDD[String]): RDD[Array[String]] ={
     data.map(line => line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)").map(elem => elem.trim))
       .filter(str => str.length > 9 && !str.contains("") && str(1).matches("[^\"]*[a-zA-Z]*") && !str(1).matches("[a-zA-Z]*"))
@@ -47,6 +59,8 @@ object TestWork {
 
   def countPopulationForAllYears(data: RDD[Array[String]]): RDD[(String, Iterable[(String, Double)])] ={
     data
+      //todo replace 'l._1._1' and etc. to case class fields
+
       // посчитаем население для каждой страны и года
       .map { x => ((x(0), x(1)), x(9).toDouble)}.reduceByKey((a,b) => a+b)
       // перегруппируем данные
