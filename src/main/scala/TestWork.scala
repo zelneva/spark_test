@@ -30,8 +30,8 @@ object TestWork {
     val countryYear = countPopulationForAllYears(population1)
     val populationLastYear = countPopulationForLastYear(countryYear)
 
-    val outputFile = "result.txt"
-    populationLastYear.saveAsTextFile(outputFile)
+    val outputFile = "output/populationCountry"
+        populationLastYear.saveAsTextFile(outputFile)
 
 
     //подсчет городов миллионников
@@ -39,8 +39,17 @@ object TestWork {
     val countryWithCityMillion = countPopulationCity(population1)
     val allCountryCountCityMillion = countCityMillionInEveryCountry(data1, countryWithCityMillion)
 
-    val outputCityMillion = "outputMillion.txt"
-    allCountryCountCityMillion.saveAsTextFile(outputCityMillion)
+    val outputCityMillion = "output/citiesMillion"
+        allCountryCountCityMillion.saveAsTextFile(outputCityMillion)
+
+
+
+    // 5 самых крупных городов
+
+    val topCities = top5cities(population1)
+
+    val outputTop5Cities = "output/top5cities"
+    topCities.saveAsTextFile(outputTop5Cities)
   }
 
 
@@ -94,6 +103,22 @@ object TestWork {
 
   def loadFile(path: String, sparkSession: SparkSession): RDD[Row] = {
     sparkSession.read.format("csv").option("header", "true").load(path).rdd
+  }
+
+
+  def top5cities(data: RDD[Population]) = {
+    data
+      // посмоторим население для каждого города по каждому году
+      .map(x => ((x.country, x.city), (x.year, x.populate)))
+      //  удалим города старой переписи
+      .reduceByKey((x, y) => if (x._1 >= y._1) x else y)
+      .map { case ((country, city), (year, population)) => ((country, city), population)}
+      // сортируем население по убыванию
+      .sortBy(_._2 , false)
+      .map{case ((country, city), population) =>(country, (city))}.groupByKey()
+      // берем первые 5 городов
+      .map( x => (x._1, x._2.take(5)))
+
   }
 
 }
