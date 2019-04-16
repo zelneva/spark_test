@@ -1,7 +1,3 @@
-import java.io.StringReader
-
-import au.com.bytecode.opencsv.CSVReader
-import org.apache.spark.sql.SparkSession
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
 

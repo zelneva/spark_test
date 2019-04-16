@@ -2,8 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b54b2c9-b567-4172-bc15-cbad8bde857e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputMillion.txt/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputMillion.txt/.part-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputMillion.txt/.part-00001.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputMillion.txt/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputMillion.txt/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputMillion.txt/part-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.txt/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.txt/.part-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.txt/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.txt/part-00000" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/SimpleApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/SimpleApp.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/TestWork.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/TestWork.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countCityMillionInEveryCountry$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countCityMillionInEveryCountry$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationCity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationCity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationCity$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationCity$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationCity$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationCity$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationForAllYears$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationForAllYears$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationForAllYears$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationForAllYears$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationForAllYears$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationForLastYear$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationForLastYear$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationForLastYear$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$countPopulationForLastYear$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$filterData$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$filterData$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$filterData$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$$anonfun$filterData$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestWork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestWork.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,37 +52,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/SimpleApp.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="19" column="142" selection-start-line="19" selection-start-column="142" selection-end-line="19" selection-end-column="142" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result.txt/part-00000">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/int.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TestWork.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="-233">
+              <caret line="51" column="51" lean-forward="true" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -80,10 +85,15 @@
       <find>Boliv</find>
       <find>Latvia</find>
       <find>Egypt</find>
-      <find>Ira</find>
       <find>Germany</find>
       <find>Iraq</find>
+      <find>Rus</find>
+      <find>Norwa</find>
       <find>I</find>
+      <find>Kaza</find>
+      <find>Ir</find>
+      <find>Ira</find>
+      <find>Iran</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,6 +107,7 @@
         <option value="$PROJECT_DIR$/text.txt" />
         <option value="$PROJECT_DIR$/src/main/scala/untitled.sc" />
         <option value="$PROJECT_DIR$/int.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/scala/SimpleApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/TestWork.scala" />
       </list>
@@ -120,9 +131,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1347" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -138,11 +149,6 @@
             <path>
               <item name="SparkExampleTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="SparkExampleTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SparkExampleTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SparkExampleTest" type="462c0819:PsiDirectoryNode" />
-              <item name="result.txt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SparkExampleTest" type="b2602c69:ProjectViewProjectNode" />
@@ -266,10 +272,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1347" height="735" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.20347957" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.21522921" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -277,13 +282,13 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.502439" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.695581" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.049099836" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.28477904" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29235882" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.65139115" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.40863788" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
@@ -349,12 +354,40 @@
     <entry file="file://$PROJECT_DIR$/result.txt/._SUCCESS.crc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/result.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/result.txt/part-00001">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1373" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputMillion.txt/part-00001">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1028">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result.txt/part-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2842">
+          <caret line="203" column="13" selection-start-line="203" selection-start-column="13" selection-end-line="203" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputMillion.txt/part-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/int.txt">
@@ -364,23 +397,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result.txt/part-00000">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/SimpleApp.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="142" selection-start-line="19" selection-start-column="142" selection-end-line="19" selection-end-column="142" />
+        <state>
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#1#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/TestWork.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        <state relative-caret-position="-233">
+          <caret line="51" column="51" lean-forward="true" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
