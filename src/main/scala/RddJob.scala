@@ -26,8 +26,7 @@ object TestWork {
     val countryYear = countPopulationForAllYears(population1)
     val populationLastYear = countPopulationForLastYear(countryYear)
 
-    val outputFile = "output/populationCountry"
-    populationLastYear.saveAsTextFile(outputFile)
+    populationLastYear.saveAsTextFile(Files.outputFile)
 
 
     //подсчет городов миллионников
@@ -35,23 +34,22 @@ object TestWork {
     val countryWithCityMillion = countPopulationCity(population1)
     val allCountryCountCityMillion = countCityMillionInEveryCountry(data1, countryWithCityMillion)
 
-    val outputCityMillion = "output/citiesMillion"
-    allCountryCountCityMillion.saveAsTextFile(outputCityMillion)
+    allCountryCountCityMillion.saveAsTextFile(Files.outputCityMillion)
 
 
     // 5 самых крупных городов
 
     val topCities = top5cities(population1)
 
-    val outputTop5Cities = "output/top5cities"
-    topCities.saveAsTextFile(outputTop5Cities)
+
+    topCities.saveAsTextFile(Files.outputTop5Cities)
 
 
     // соотношение мужского и женского населения
 
     val ratioPopulation = calculateRatioPopulation(population2)
-    val outputRatioPopulation = "output/ratioPopulation"
-    ratioPopulation.saveAsTextFile(outputRatioPopulation)
+
+    ratioPopulation.saveAsTextFile(Files.outputRatioPopulation)
 
 
   }
