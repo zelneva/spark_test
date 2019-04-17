@@ -4,12 +4,6 @@ import org.apache.spark.sql.{Row, SparkSession}
 
 object TestWork {
 
-  object Files {
-    val FILE_1 = "C:\\Users\\Администратор\\Downloads\\Telegram Desktop\\unsd-citypopulation-year-both.csv"
-    val FILE_2 = "C:\\Users\\Администратор\\Downloads\\Telegram Desktop\\unsd-citypopulation-year-fm.csv"
-  }
-
-
   def main(args: Array[String]) {
 
     val sparkSession = SparkSession.builder
@@ -148,6 +142,3 @@ object TestWork {
   }
 
 }
-
-
-class Population(var country: String, var year: Int, var city: String, var population: Double, var sex: String)
