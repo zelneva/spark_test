@@ -2,13 +2,13 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{Row, SparkSession}
 
 
-object TestWork {
+object RddJob {
 
   def main(args: Array[String]) {
 
     val sparkSession = SparkSession.builder
       .master("local")
-      .appName("TestWork")
+      .appName("RddJob")
       .config("spark.master", "local")
       .getOrCreate()
 
@@ -25,7 +25,6 @@ object TestWork {
 
     val countryYear = countPopulationForAllYears(population1)
     val populationLastYear = countPopulationForLastYear(countryYear)
-
     populationLastYear.saveAsTextFile(Files.outputFile)
 
 
@@ -33,25 +32,19 @@ object TestWork {
 
     val countryWithCityMillion = countPopulationCity(population1)
     val allCountryCountCityMillion = countCityMillionInEveryCountry(data1, countryWithCityMillion)
-
     allCountryCountCityMillion.saveAsTextFile(Files.outputCityMillion)
 
 
     // 5 самых крупных городов
 
     val topCities = top5cities(population1)
-
-
     topCities.saveAsTextFile(Files.outputTop5Cities)
 
 
     // соотношение мужского и женского населения
 
     val ratioPopulation = calculateRatioPopulation(population2)
-
     ratioPopulation.saveAsTextFile(Files.outputRatioPopulation)
-
-
   }
 
 
@@ -66,19 +59,19 @@ object TestWork {
   }
 
 
-  def countPopulationForAllYears(data: RDD[Population]): RDD[(String, Iterable[(Int, Double)])] = {
+  def countPopulationForAllYears(data: RDD[Population]) = {
     data
       // посчитаем население для каждой страны и года
       .map { p => ((p.country, p.year), p.population) }.reduceByKey((a, b) => a + b)
       // перегруппируем данные
-      .map { case ((country, year), populate) => (country, (year, populate)) }.groupByKey()
+      .map { case ((country, year), populate) => (country, (year, populate)) }
   }
 
 
-  def countPopulationForLastYear(data: RDD[(String, Iterable[(Int, Double)])]): RDD[(String, Double)] = {
+  def countPopulationForLastYear(data: RDD[(String,(Int, Double))]): RDD[(String, Double)] = {
     data
       // найдем максимальные значения для каждой страны
-      .map { x => (x._1, x._2.max) }
+      .reduceByKey((x, y) => if (x._1 >= y._1) x else y)
       //  уберем данные о годе
       .map { case (country, (year, population)) => (country, population) }
   }
