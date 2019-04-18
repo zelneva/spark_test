@@ -16,19 +16,25 @@ object DfJob {
     import sparkSession.implicits._
 
     val df1 = loadFile(Files.FILE_1, sparkSession)
-    val a = filterData(df1)
-    val b = loadData(a)
+    val filterData1 = filterData(df1)
+    val data1 = loadData(filterData1)
+
+    val df2 = loadFile(Files.FILE_2, sparkSession)
+    val filterData2 = filterData(df2)
+    val data2 = loadData(filterData2)
 
 
-    val maxYear: WindowSpec = Window.partitionBy('country).orderBy('year.desc)
+    val countryYearWindow: WindowSpec = Window.partitionBy('country).orderBy('year.desc)
+    val countryPopulationWindow = Window.partitionBy('country).orderBy('populationCity.desc)
 
 
-    val countryPopulation = getPopulationForLastYears(b, maxYear)
+    val countryPopulation = getPopulationForLastYears(data1, countryYearWindow)
 //    countryPopulation.rdd.saveAsTextFile(Files.outputDFPopulation)
 
+    val countCitiesMillion = getCountCitiesMillon(data1, countryYearWindow)
 
-    val countCitiesMillion = getCountCitiesMillon(b, maxYear)
 
+    val top5cities = getTop5Cities(data1, countryYearWindow, countryPopulationWindow)
 
 
   }
@@ -75,6 +81,18 @@ object DfJob {
   }
 
 
+  def getTop5Cities(data: DataFrame, maxYear: WindowSpec, countryPopulationWindow: WindowSpec ): DataFrame ={
+    data
+    .select("country", "city", "year", "population")
+      .withColumn("max_year", max("year").over(maxYear))
+      .where("year = max_year")
+      .groupBy("country", "city")
+      .agg(sum("population").as("populationCity"))
+      .withColumn("row", row_number().over(countryPopulationWindow))
+      .orderBy( data("country"), desc("populationCity"))
+      .where("row <= 5")
+      .drop("row", "populationCity")
+  }
 
 
 }
