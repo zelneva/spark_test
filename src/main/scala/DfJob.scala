@@ -1,6 +1,6 @@
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.expressions.{Window, WindowSpec}
-import org.apache.spark.sql.{DataFrame, Dataset, Encoders, Row, SparkSession, functions}
+import org.apache.spark.sql.{DataFrame, Dataset, Encoders, Row, SparkSession}
 import org.apache.spark.sql.functions._
 
 
@@ -24,7 +24,12 @@ object DfJob {
 
 
     val countryPopulation = getPopulationForLastYears(b, maxYear)
-    //countryPopulation.rdd.map(_.toString().replace("[","").replace("]", "")).saveAsTextFile(Files.outputDFPopulation)
+//    countryPopulation.rdd.saveAsTextFile(Files.outputDFPopulation)
+
+
+    val countCitiesMillion = getCountCitiesMillon(b, maxYear)
+
+
 
   }
 
@@ -54,9 +59,22 @@ object DfJob {
       .where("year = max_year")
       .groupBy("country")
       .agg(sum("population").as("populationForLastYear"))
-
-
   }
+
+
+  def getCountCitiesMillon(data: DataFrame,  maxYear: WindowSpec): DataFrame = {
+    data
+    .select("country", "city", "year", "population")
+      .withColumn("max_year", max("year").over(maxYear))
+      .where("year = max_year")
+      .groupBy("country", "city")
+      .agg(sum("population").as("populationForLastYear"))
+      .filter("populationForLastYear >= 1000000")
+      .groupBy("country")
+      .agg(count("city"))
+  }
+
+
 
 
 }
