@@ -4,13 +4,7 @@ import org.apache.spark.sql.{Row, SparkSession}
 
 object RddJob {
 
-  def main(args: Array[String]) {
-
-    val sparkSession = SparkSession.builder
-      .master("local")
-      .appName("RddJob")
-      .config("spark.master", "local")
-      .getOrCreate()
+  def apply(sparkSession: SparkSession) =  {
 
     val input1 = loadFile(Files.FILE_1, sparkSession)
     val data1 = filterData(input1)
@@ -25,26 +19,26 @@ object RddJob {
 
     val countryYear = countPopulationForAllYears(population1)
     val populationLastYear = countPopulationForLastYear(countryYear)
-    populationLastYear.saveAsTextFile(Files.outputFile)
+    populationLastYear.saveAsTextFile(Files.outputRDDPopulation)
 
 
     //подсчет городов миллионников
 
     val countryWithCityMillion = countPopulationCity(population1)
     val allCountryCountCityMillion = countCityMillionInEveryCountry(data1, countryWithCityMillion)
-    allCountryCountCityMillion.saveAsTextFile(Files.outputCityMillion)
+    allCountryCountCityMillion.saveAsTextFile(Files.outputRDDCityMillion)
 
 
     // 5 самых крупных городов
 
     val topCities = top5cities(population1)
-    topCities.saveAsTextFile(Files.outputTop5Cities)
+    topCities.saveAsTextFile(Files.outputRDDTop5Cities)
 
 
     // соотношение мужского и женского населения
 
     val ratioPopulation = calculateRatioPopulation(population2)
-    ratioPopulation.saveAsTextFile(Files.outputRatioPopulation)
+    ratioPopulation.saveAsTextFile(Files.outputRDDRatioPopulation)
   }
 
 
